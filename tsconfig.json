@@ -1,0 +1,10 @@
+{
+  "extends": ["@tsconfig/node16/tsconfig", "@tsconfig/strictest/tsconfig"],
+  "compilerOptions": {
+    "moduleResolution": "NodeNext",
+    "declaration": false,
+    "outDir": "dist-for-testing"
+  },
+  "include": ["bin", "src", "tests"],
+  "exclude": ["src/blueprints", "tests/fixtures"]
+}
