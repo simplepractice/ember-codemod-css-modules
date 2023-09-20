@@ -1,0 +1,58 @@
+{
+  "name": "@simplepractice/ember-codemod-css-modules",
+  "version": "1.0.0",
+  "description": "Codemod to replace ember-component-css with ember-css-modules (compatible with embroider-css-modules)",
+  "keywords": [
+    "codemod",
+    "css-modules",
+    "ember-codemod",
+    "ember-css-modules",
+    "emberjs",
+    "embroider-css-modules"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/simplepractice/ember-simplepractice.git"
+  },
+  "license": "MIT",
+  "author": "Dmitry Krasnoukhov",
+  "type": "module",
+  "main": "dist/src/index.js",
+  "bin": "dist/bin/ember-codemod-css-modules.js",
+  "directories": {
+    "test": "tests"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "./build.sh --production",
+    "lint:types": "tsc --noEmit",
+    "prepare": "yarn build",
+    "test": "./build.sh --test && mt dist-for-testing --quiet"
+  },
+  "dependencies": {
+    "@codemod-utils/ast-javascript": "https://gitpkg.now.sh/simplepractice/codemod-utils/packages/ast/javascript?main",
+    "@codemod-utils/ast-template": "^0.3.1",
+    "@codemod-utils/blueprints": "^0.2.1",
+    "@codemod-utils/ember-cli-string": "^0.1.1",
+    "@codemod-utils/files": "^0.5.3",
+    "@codemod-utils/json": "^0.4.2",
+    "@tsconfig/ember": "^3.0.0",
+    "@tsconfig/node16": "^16.1.1",
+    "@tsconfig/strictest": "^2.0.2",
+    "postcss": "^8.4.29",
+    "postcss-scss": "^4.0.7",
+    "yargs": "^17.7.2"
+  },
+  "devDependencies": {
+    "@codemod-utils/tests": "^0.3.1",
+    "@sondr3/minitest": "^0.1.1",
+    "@types/node": "^16.18.47",
+    "@types/yargs": "^17.0.24",
+    "typescript": "^5.2.2"
+  },
+  "engines": {
+    "node": "16.* || >= 18"
+  }
+}

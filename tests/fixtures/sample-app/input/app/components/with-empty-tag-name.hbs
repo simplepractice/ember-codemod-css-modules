@@ -1,0 +1,6 @@
+<div class="{{this.styleNamespace}}-outer">
+  <div class="{{this.componentCssClassName}}-inner" data-test-classes={{array this.componentCssClassName "whatever"}}>
+    {{yield (hash test1=this.styleNamespace test2=this.componentCssClassName)}}
+    <Test @className={{this.styleNamespace}} @classes="hello {{this.componentCssClassName}}" />
+  </div>
+</div>

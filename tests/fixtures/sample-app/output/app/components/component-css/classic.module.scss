@@ -1,0 +1,24 @@
+@use "-variables" as *;
+@import "-variables";
+// stylelint-disable selector-class-pattern
+$some-var: 12px;
+
+:local(.component) {
+  background: black;
+
+// comment1
+.item {
+  color: blue;
+
+  // comment2
+  .nested {
+    color: red;
+  }
+}
+
+@media (hover) {
+  &:hover {
+    cursor: pointer;
+  }
+}
+}
