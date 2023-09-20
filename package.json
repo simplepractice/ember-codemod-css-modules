@@ -1,5 +1,5 @@
 {
-  "name": "@simplepractice/ember-codemod-css-modules",
+  "name": "ember-codemod-css-modules",
   "version": "1.0.0",
   "description": "Codemod to replace ember-component-css with ember-css-modules (compatible with embroider-css-modules)",
   "keywords": [
