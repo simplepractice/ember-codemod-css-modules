@@ -32,7 +32,7 @@
     "test": "./build.sh --test && mt dist-for-testing --quiet"
   },
   "dependencies": {
-    "@codemod-utils/ast-javascript": "https://gitpkg.now.sh/simplepractice/codemod-utils/packages/ast/javascript?main",
+    "@codemod-utils/ast-javascript": "^1.1.0",
     "@codemod-utils/ast-template": "^0.3.1",
     "@codemod-utils/blueprints": "^0.2.1",
     "@codemod-utils/ember-cli-string": "^0.1.1",
